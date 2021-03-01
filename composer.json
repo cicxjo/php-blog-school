@@ -6,5 +6,8 @@
             "email": "79850947+cicxjo@users.noreply.github.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "require-dev": {
+        "squizlabs/php_codesniffer": "3.*"
+    }
 }
