@@ -1,0 +1,10 @@
+{
+    "name": "cyril/php-blog-school",
+    "authors": [
+        {
+            "name": "cicxjo",
+            "email": "79850947+cicxjo@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
