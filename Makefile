@@ -17,4 +17,10 @@ server:
 	php -S 127.0.0.1:$(PORT) -t $(SOURCES) -d display_errors="$(DISPLAY_ERRORS)" \
 		-d error_reporting="$(ERROR_REPORTING)"
 
-.PHONY: all install phpcs server
+lint:
+	find $(SOURCES) -name "*.php" \
+		-exec php -l {} \
+		-d display_errors="$(DISPLAY_ERRORS)" \
+		-d error_reporting="$(ERROR_REPORTING)" \;
+
+.PHONY: all install phpcs server lint
